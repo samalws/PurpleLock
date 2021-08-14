@@ -203,7 +203,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun addListItem(applicationInfo: ApplicationInfo) {
         // TODO LATER remove settings from the list too?
-        if (applicationInfo.packageName == BuildConfig.APPLICATION_ID)
+        if (applicationInfo.packageName == BuildConfig.APPLICATION_ID || applicationInfo.packageName == "com.android.settings")
             return
 
         val item = View.inflate(this, R.layout.app_list_item, null)
